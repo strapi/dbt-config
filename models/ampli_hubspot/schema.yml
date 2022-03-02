@@ -34,3 +34,7 @@ models:
       
       - name: start_version
         description: Version of Strapi at the start of the project
+
+      - name: referer
+        description: User referer
+

@@ -25,7 +25,8 @@ with data_table as (
   _airbyte_data:start_version as start_version,
   _airbyte_data:user_properties.gaClientID as ga_client_id,
   _airbyte_data:user_properties.numberOfRoles as number_of_roles,
-  _airbyte_data:user_properties.numberOfUsers as number_of_users
+  _airbyte_data:user_properties.numberOfUsers as number_of_users,
+  _airbyte_data:event_properties.referer as referer
 
   from {{ source('airbyte_amplitude', '_airbyte_raw_amplitude_events') }}
 ),
