@@ -38,4 +38,4 @@ final as (
   select * from data_table
 )
 
-select distinct * from final
+select distinct * from final where license_subscription_id is not null
