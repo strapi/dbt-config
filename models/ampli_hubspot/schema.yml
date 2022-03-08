@@ -32,9 +32,19 @@ models:
       - name: number_of_users
         description: Number of admin panel users that the project currently has
       
+      - name: plugins
+        description: Plugins in use by the project
+
+      - name: project_type
+        description: Project type
+
+      - name: license_subscription_id
+        description: Subscription ID of the license assigned to the project
+
       - name: start_version
         description: Version of Strapi at the start of the project
 
       - name: referer
         description: User referer
+      
 
